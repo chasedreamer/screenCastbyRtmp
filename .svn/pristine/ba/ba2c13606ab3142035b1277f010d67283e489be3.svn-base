@@ -1,0 +1,195 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:2:1-52:12
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/a5a48d950000e43fd21b9a717ccb5298/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/0c0fa0f5a9431a2bb0fc8c0a6a6704fd/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/6d1e1183e8ea0831a7bdb030d838d79a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-v4:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.1.aar/74ce537f86b6c196e1c9beac01e0ee77/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:cardview-v7:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.1.aar/d7b7ead6c863ba19194b34d177bae335/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta3] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0-beta3.aar/bb803ac4b1b546181f73e6ea7a92b0c3/AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton:butterknife:8.5.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/butterknife-8.5.1.aar/8eeadd3ac707d1bd354d9691e9fd3113/AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:support-fragment:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.1.aar/6c8d6779e278ab109a73c512dd3db60d/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.1.aar/d618f98892b2ba5ab7de8413f9db0498/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.0.1.aar/605b3f391bc3ab2493ac17e02218abc1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.0.1.aar/56477159d956a25811f7a7eec9c75a73/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.1.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-compat-25.1.0.aar/6464ca555ce2a54b46b97358c3d8dde0/AndroidManifest.xml:17:1-27:12
+INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:2:1-52:12
+	package
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:2:1-52:12
+		INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:2:1-52:12
+		INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:6:5-78
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:6:22-75
+uses-permission#android.permission.CAMERA
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:7:22-62
+uses-permission#android.permission.INTERNET
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:8:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:10:5-71
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:10:22-68
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:11:22-65
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:12:5-69
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:12:22-66
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:13:22-77
+uses-feature#android.hardware.camera
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:15:5-60
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:15:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:16:5-70
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:16:19-67
+application
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:18:5-50:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/a5a48d950000e43fd21b9a717ccb5298/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/a5a48d950000e43fd21b9a717ccb5298/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/0c0fa0f5a9431a2bb0fc8c0a6a6704fd/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/0c0fa0f5a9431a2bb0fc8c0a6a6704fd/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/6d1e1183e8ea0831a7bdb030d838d79a/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/6d1e1183e8ea0831a7bdb030d838d79a/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.1.aar/74ce537f86b6c196e1c9beac01e0ee77/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.1.aar/74ce537f86b6c196e1c9beac01e0ee77/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.1.aar/d7b7ead6c863ba19194b34d177bae335/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.1.aar/d7b7ead6c863ba19194b34d177bae335/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta3] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0-beta3.aar/bb803ac4b1b546181f73e6ea7a92b0c3/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta3] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0-beta3.aar/bb803ac4b1b546181f73e6ea7a92b0c3/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-fragment:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.1.aar/6c8d6779e278ab109a73c512dd3db60d/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.1.aar/6c8d6779e278ab109a73c512dd3db60d/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.1.aar/d618f98892b2ba5ab7de8413f9db0498/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.1.aar/d618f98892b2ba5ab7de8413f9db0498/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.0.1.aar/605b3f391bc3ab2493ac17e02218abc1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.0.1.aar/605b3f391bc3ab2493ac17e02218abc1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.0.1.aar/56477159d956a25811f7a7eec9c75a73/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.0.1.aar/56477159d956a25811f7a7eec9c75a73/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-compat-25.1.0.aar/6464ca555ce2a54b46b97358c3d8dde0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-compat-25.1.0.aar/6464ca555ce2a54b46b97358c3d8dde0/AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:22:9-41
+	android:icon
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:21:9-45
+	android:allowBackup
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:20:9-35
+	android:theme
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:23:9-40
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:19:9-72
+activity#net.chr.screenrecorder.ui.activity.ScreenRecordActivity
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:24:9-29:11
+	android:label
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:26:13-45
+	android:launchMode
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:27:13-36
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:25:13-83
+service#net.chr.screenrecorder.service.ScreenRecordListenerService
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:31:9-34:39
+	android:enabled
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:33:13-35
+	android:exported
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:34:13-36
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:32:13-86
+activity#net.chr.screenrecorder.ui.activity.LaunchActivity
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:36:9-46:20
+	android:exported
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:39:13-36
+	android:theme
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:38:13-56
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:37:13-77
+intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT+android.intent.category.LAUNCHER
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:40:13-44:29
+action#android.intent.action.MAIN
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:41:17-69
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:41:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:42:17-77
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:42:27-74
+category#android.intent.category.DEFAULT
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:43:17-75
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:43:27-73
+activity#net.chr.screenrecorder.ui.activity.CameraActivity
+ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:47:9-49:59
+	android:theme
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:49:13-56
+	android:name
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml:48:13-77
+uses-sdk
+INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/a5a48d950000e43fd21b9a717ccb5298/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/a5a48d950000e43fd21b9a717ccb5298/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/0c0fa0f5a9431a2bb0fc8c0a6a6704fd/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/0c0fa0f5a9431a2bb0fc8c0a6a6704fd/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/6d1e1183e8ea0831a7bdb030d838d79a/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/6d1e1183e8ea0831a7bdb030d838d79a/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.1.aar/74ce537f86b6c196e1c9beac01e0ee77/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.1.aar/74ce537f86b6c196e1c9beac01e0ee77/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:cardview-v7:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.1.aar/d7b7ead6c863ba19194b34d177bae335/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.0.1.aar/d7b7ead6c863ba19194b34d177bae335/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta3] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0-beta3.aar/bb803ac4b1b546181f73e6ea7a92b0c3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta3] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0-beta3.aar/bb803ac4b1b546181f73e6ea7a92b0c3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:8.5.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/butterknife-8.5.1.aar/8eeadd3ac707d1bd354d9691e9fd3113/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.5.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/butterknife-8.5.1.aar/8eeadd3ac707d1bd354d9691e9fd3113/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-fragment:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.1.aar/6c8d6779e278ab109a73c512dd3db60d/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.1.aar/6c8d6779e278ab109a73c512dd3db60d/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.1.aar/d618f98892b2ba5ab7de8413f9db0498/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.1.aar/d618f98892b2ba5ab7de8413f9db0498/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.0.1.aar/605b3f391bc3ab2493ac17e02218abc1/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.0.1.aar/605b3f391bc3ab2493ac17e02218abc1/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.0.1.aar/56477159d956a25811f7a7eec9c75a73/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.0.1] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.0.1.aar/56477159d956a25811f7a7eec9c75a73/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.1.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-compat-25.1.0.aar/6464ca555ce2a54b46b97358c3d8dde0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.1.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/support-compat-25.1.0.aar/6464ca555ce2a54b46b97358c3d8dde0/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/lixingkun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/a5a48d950000e43fd21b9a717ccb5298/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lixingkun/android_flash/svn_169_101/ScreenRecorder/app/src/main/AndroidManifest.xml
