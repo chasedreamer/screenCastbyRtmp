@@ -3,7 +3,7 @@ Thanks for the authers of below gits:
 
  https://github.com/yrom/ScreenRecorder 
  
- https://raw.githubusercontent.com/eterrao/ScreenRecorder
+ https://github.com/eterrao/ScreenRecorder
  
  https://github.com/saki4510t/ScreenRecordingSample
 
