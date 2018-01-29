@@ -35,7 +35,7 @@ import java.io.IOException;
 
 
 public abstract class MediaVideoEncoderBase extends MediaEncoder {
-	private static final boolean DEBUG = true;	// TODO set false on release
+	private static final boolean DEBUG = false;	// TODO set false on release
 	private static final String TAG = MediaVideoEncoderBase.class.getSimpleName();
 
 	// parameters for recording

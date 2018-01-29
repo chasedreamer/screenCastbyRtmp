@@ -40,7 +40,7 @@ public class MediaMuxerWrapper {
 	private static final String TAG = MediaMuxerWrapper.class.getSimpleName();
 
 	private String mOutputPath;
-	private final MediaMuxer mMediaMuxer;	// API >= 18
+	private final MediaMuxer mMediaMuxer=null;	// API >= 18
 	private int mEncoderCount, mStatredCount;
 	private boolean mIsStarted;
 	private volatile boolean mIsPaused;
@@ -52,14 +52,14 @@ public class MediaMuxerWrapper {
 	 * @throws IOException
 	 */
 	public MediaMuxerWrapper(final Context context, final String _ext) throws IOException {
-		String ext = _ext;
-		if (TextUtils.isEmpty(ext)) ext = ".mp4";
-		try {
-			mOutputPath = FileUtils.getCaptureFile(context, Environment.DIRECTORY_MOVIES, ext, 0).toString();
-		} catch (final NullPointerException e) {
-			throw new RuntimeException("This app has no permission of writing external storage");
-		}
-		mMediaMuxer = new MediaMuxer(mOutputPath, MediaMuxer.OutputFormat.MUXER_OUTPUT_MPEG_4);
+//		String ext = _ext;
+//		if (TextUtils.isEmpty(ext)) ext = ".mp4";
+//		try {
+//			mOutputPath = FileUtils.getCaptureFile(context, Environment.DIRECTORY_MOVIES, ext, 0).toString();
+//		} catch (final NullPointerException e) {
+//			throw new RuntimeException("This app has no permission of writing external storage");
+//		}
+//		mMediaMuxer = new MediaMuxer(mOutputPath, MediaMuxer.OutputFormat.MUXER_OUTPUT_MPEG_4);
 		mEncoderCount = mStatredCount = 0;
 		mIsStarted = false;
 	}

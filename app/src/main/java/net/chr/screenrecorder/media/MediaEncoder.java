@@ -269,21 +269,24 @@ public abstract class MediaEncoder implements Runnable {
 			}
         }
         if (mMuxerStarted) {
-       		final MediaMuxerWrapper muxer = mWeakMuxer != null ? mWeakMuxer.get() : null;
-       		if (muxer != null) {
-       			try {
-           			muxer.stop();
-    			} catch (final Exception e) {
-    				Log.e(TAG, "failed stopping muxer", e);
-    			}
-       		}
+			if(false)
+			{
+				final MediaMuxerWrapper muxer = mWeakMuxer != null ? mWeakMuxer.get() : null;
+				if (muxer != null) {
+					try {
+						muxer.stop();
+					} catch (final Exception e) {
+						Log.e(TAG, "failed stopping muxer", e);
+					}
+				}
+			}
         }
         mBufferInfo = null;
     }
 
     protected void signalEndOfInputStream() {
 		if (DEBUG) Log.d(TAG, "sending EOS to encoder");
-        // signalEndOfInputStream is only avairable for video encoding with surface
+        // signalEndOfInputStream is only available for video encoding with surface
         // and equivalent sending a empty buffer with BUFFER_FLAG_END_OF_STREAM flag.
 //		mMediaCodec.signalEndOfInputStream();	// API >= 18
         encode(null, 0, getPTSUs());
@@ -340,14 +343,20 @@ public abstract class MediaEncoder implements Runnable {
         	Log.w(TAG, "muxer is unexpectedly null");
         	return;
         }
+
 LOOP:	while (mIsCapturing) {
+
+
+
 			// get encoded data with maximum timeout duration of TIMEOUT_USEC(=10[msec])
             encoderStatus = mMediaCodec.dequeueOutputBuffer(mBufferInfo, TIMEOUT_USEC);
             if (encoderStatus == MediaCodec.INFO_TRY_AGAIN_LATER) {
                 // wait 5 counts(=TIMEOUT_USEC x 5 = 50msec) until data/EOS come
                 if (!mIsEOS) {
-                	if (++count > 5)
-                		break LOOP;		// out of while
+                	if (++count > 5) {
+						//Log.e(TAG, "++count > 5");
+						break LOOP;        // out of while
+					}
                 }
             } else if (encoderStatus == MediaCodec.INFO_OUTPUT_BUFFERS_CHANGED) {
             	if (DEBUG) Log.v(TAG, "INFO_OUTPUT_BUFFERS_CHANGED");
@@ -365,11 +374,12 @@ LOOP:	while (mIsCapturing) {
 				// get output format from codec and pass them to muxer
 				// getOutputFormat should be called after INFO_OUTPUT_FORMAT_CHANGED otherwise crash.
                 final MediaFormat format = mMediaCodec.getOutputFormat(); // API >= 16
-               	mTrackIndex = muxer.addTrack(format);
-               	mMuxerStarted = true;
 
                	if(false)
 				{
+					mTrackIndex = muxer.addTrack(format);
+					mMuxerStarted = true;
+
 					if (!muxer.start()) {
 						// we should wait until muxer is ready
 						synchronized (muxer) {
@@ -454,6 +464,7 @@ LOOP:	while (mIsCapturing) {
                 if ((mBufferInfo.flags & MediaCodec.BUFFER_FLAG_END_OF_STREAM) != 0) {
                 	// when EOS come.
                		mIsCapturing = false;
+					Log.e(TAG, "drain: mBufferInfo.flags & MediaCodec.BUFFER_FLAG_END_OF_STREAM) != 0");
                     break;      // out of while
                 }
             }

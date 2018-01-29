@@ -43,7 +43,7 @@ import net.chr.screenrecorder.rtmp.RESFlvDataCollecter;
 import java.io.IOException;
 
 public class MediaScreenEncoder extends MediaVideoEncoderBase {
-	private static final boolean DEBUG = true;	// TODO set false on release
+	private static final boolean DEBUG = false;	// TODO set false on release
 	private static final String TAG = MediaScreenEncoder.class.getSimpleName();
 
 	private static final String MIME_TYPE = MediaFormat.MIMETYPE_VIDEO_AVC;

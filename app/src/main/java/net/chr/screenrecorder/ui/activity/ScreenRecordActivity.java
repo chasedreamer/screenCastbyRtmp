@@ -22,6 +22,8 @@ import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.os.Handler;
 
+import android.os.Looper;
+import android.os.Message;
 import android.support.v4.app.FragmentActivity;
 import android.util.DisplayMetrics;
 import android.view.Surface;
@@ -81,7 +83,7 @@ import java.util.concurrent.Executors;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 
-public class ScreenRecordActivity extends FragmentActivity implements View.OnClickListener , SurfaceHolder.Callback{
+public class ScreenRecordActivity extends FragmentActivity implements View.OnClickListener {
     private static final int REQUEST_CODE = 1;
     private Button mButton;
     private Button mButtonReset;
@@ -104,6 +106,7 @@ public class ScreenRecordActivity extends FragmentActivity implements View.OnCli
     private Button btn_floatView;
     Handler han;
     private static MediaMuxerWrapper sMuxer;
+    private Handler mHandler;
 
 
     SurfaceView mSurfaceView ;
@@ -147,23 +150,23 @@ public class ScreenRecordActivity extends FragmentActivity implements View.OnCli
         this.getWindowManager().getDefaultDisplay().getMetrics(metrics);
         mScreenDensity = metrics.densityDpi;
 
-        mButton = (Button) findViewById(R.id.button);
-        mRtmpAddET = (EditText) findViewById(R.id.et_rtmp_address);
+        mButton = findViewById(R.id.button);
+        mRtmpAddET = findViewById(R.id.et_rtmp_address);
+
         mButton.setOnClickListener(this);
         mMediaProjectionManager = (MediaProjectionManager) getSystemService(MEDIA_PROJECTION_SERVICE);
 
-        mSurfaceView = (SurfaceView) findViewById(R.id.surfaceView);
+        mSurfaceView = findViewById(R.id.surfaceView);
         mSurface = mSurfaceView.getHolder().getSurface();
 
-        mSurfaceView.getHolder().addCallback(this);
 
-        Intent intent= getIntent();
+        Intent intent = getIntent();
         intentValue = intent.getStringExtra("arge1");
 
         int port = 1936;
-        if(intentValue != null)
-        {
-            mRtmpAddET.setText("rtmp://"+intentValue+":"+port+"/live2/video");
+        if (intentValue != null) {
+            mRtmpAddET.setText("rtmp://" + intentValue + ":" + port + "/live2/video");
+            mRtmpAddET.setVisibility(View.INVISIBLE);
         }
 
         BroadcastReceiver receiver = new BroadcastReceiver() {
@@ -177,8 +180,34 @@ public class ScreenRecordActivity extends FragmentActivity implements View.OnCli
         intentFilter.addAction("net.chr.screenrecorder");
         registerReceiver(receiver, intentFilter);
 
+        mHandler = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                Log.e("ScreenRecordActivity", "handleMessage00: received:" + msg);
+
+                switch (msg.what) {
+                    case 1:
+                        onClick(null);
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+        };
+        sendMessage(null);
+
     }
 
+    public void sendMessage(String message)
+    {
+        Log.e("ScreenRecordActivity", "sendMessage: "+message);
+        Message msg = mHandler.obtainMessage();// new Message();
+        msg.what = 1;
+        msg.obj = message;
+
+        mHandler.sendMessage(msg);
+    }
     @Override
     protected void onNewIntent(Intent intent) {
 
@@ -189,30 +218,6 @@ public class ScreenRecordActivity extends FragmentActivity implements View.OnCli
 
     }
 
-    @Override
-    public void surfaceChanged(SurfaceHolder holder, int format, int width,
-                               int height) {
-        // TODO Auto-generated method stub
-        Log.e("ScreenRecordActivity","surfaceChanged is called");
-    }
-
-    @Override
-    public void surfaceCreated(SurfaceHolder holder) {
-        // TODO Auto-generated method stub
-        Log.e("ScreenRecordActivity","surfaceCreated is called");
-
-//        mThread.isRun = true;
-//        mThread.start();
-    }
-
-    @Override
-    public void surfaceDestroyed(SurfaceHolder holder) {
-        // TODO Auto-generated method stub
-        Log.e("ScreenRecordActivity","surfaceDestroyed is called");
-
-//        mThread.isRun = false;
-//        mThread.stop();
-    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -222,7 +227,6 @@ public class ScreenRecordActivity extends FragmentActivity implements View.OnCli
             Log.e("@@", "media projection is null");
             return;
         }
-       // mSurfaceView = fragment.mSurfaceView;
 
         rtmpAddr = mRtmpAddET.getText().toString().trim();
         if (TextUtils.isEmpty(rtmpAddr)) {
@@ -261,6 +265,7 @@ public class ScreenRecordActivity extends FragmentActivity implements View.OnCli
            // new MediaAudioEncoder(sMuxer,collecter, mMediaEncoderListener);
             sMuxer.prepare();
             sMuxer.startRecording();
+
 
 
         }catch (Exception e)
@@ -390,22 +395,29 @@ public class ScreenRecordActivity extends FragmentActivity implements View.OnCli
     public void onClick(View v) {
         Log.e("mVideoRecorder", "onClick: "+mVideoRecorder );
       //  if (mVideoRecorder != null)
-        if (sMuxer != null && sMuxer.isStarted() == true)
+        if (sMuxer != null )
         {
-          //  stopScreenRecord();
+            stopScreenRecord();
             sMuxer.stopRecording();
+            sMuxer = null;
+            mButton.setText("Start");
         } else {
             createScreenCapture();
-            //createFloatView();
         }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        wm.removeViewImmediate(btn_floatView);
+//        wm.removeViewImmediate(btn_floatView);
         if (mVideoRecorder != null) {
             stopScreenRecord();
+        }
+        if (sMuxer != null )
+        {
+            Log.e("mVideoRecorder", "onDestroy: Stopping screen recording" );
+            stopScreenRecord();
+            sMuxer.stopRecording();
         }
     }
 
@@ -473,8 +485,11 @@ public class ScreenRecordActivity extends FragmentActivity implements View.OnCli
     }
 
     private void stopScreenRecord() {
-        mVideoRecorder.quit();
-        mVideoRecorder = null;
+        if(mVideoRecorder != null)
+        {
+            mVideoRecorder.quit();
+            mVideoRecorder = null;
+        }
         if (streamingSender != null) {
             streamingSender.sendStop();
             streamingSender.quit();
